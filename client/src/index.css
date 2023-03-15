@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Poppins:wght@200;300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-poppins bg-neutral-800;
+  }
+  a,
+  Link {
+    @apply text-inherit;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
