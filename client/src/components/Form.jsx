@@ -9,12 +9,12 @@ export default function Form({ url, setUrl, urlSubmitHandler }) {
           value={url}
           onChange={(event) => setUrl(event.target.value)}
           placeholder='Enter the URL you wanna preview'
-          className='px-2 py-2.5 rounded-sm border border-zinc-600 focus:outline-lime-500 text-xs md:text-sm xl:text-base placeholder:text-sm placeholder:text-gray-300'
+          className='px-2 py-2.5 rounded-sm border border-zinc-300 focus:outline-violet-500 text-xs md:text-sm xl:text-base placeholder:text-sm placeholder:text-gray-300'
         />
         <button
           type='submit'
           onClick={urlSubmitHandler}
-          className='bg-lime-500 hover:bg-lime-600 py-2.5 rounded-sm text-xs md:text-sm xl:text-base font-medium flex items-center justify-center gap-1 text-zinc-800'>
+          className='bg-violet-500 hover:bg-violet-600 py-2.5 rounded-sm text-xs md:text-sm xl:text-base font-medium flex items-center justify-center gap-1 text-zinc-50'>
           Surprise Me
           <BsStars className='text-lg lg:text-xl' />
         </button>

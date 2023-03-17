@@ -33,9 +33,9 @@ const App = () => {
   return (
     <main className='pb-10'>
       <Header />
-      <h1 className='text-left md:text-center text-lg md:text-xl text-lime-500 font-medium xl:font-semibold'>
+      {/* <h1 className='text-left md:text-center text-lg md:text-xl text-purple-500 font-medium xl:font-semibold'>
         A tool for previewing your link before sharing
-      </h1>
+      </h1> */}
 
       <Form url={url} setUrl={setUrl} urlSubmitHandler={urlSubmitHandler} />
 
@@ -46,6 +46,7 @@ const App = () => {
               <LinkPreviewCard
                 linkPreview={linkPreview}
                 removeCardHandle={removeCardHandler}
+                url={url}
               />
             )}
           </>

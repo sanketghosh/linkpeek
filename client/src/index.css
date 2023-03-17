@@ -6,12 +6,18 @@
 
 @layer base {
   html {
-    @apply font-poppins bg-neutral-800;
+    @apply font-poppins bg-neutral-100;
   }
   a,
   Link {
     @apply text-inherit;
   }
+}
+
+.overflow_text {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 
 ::-webkit-scrollbar {
